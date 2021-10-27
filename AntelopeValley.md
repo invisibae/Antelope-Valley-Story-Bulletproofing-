@@ -390,7 +390,7 @@ AntValleyClean %>%
 
 ![](AntelopeValley_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
 
-### 78% of citations at Antelope Valley High were given to Black students. The single police contact with a white student did not result in a citation the number of contacts at Quartz Hill High, located on the city’s more affluent west side, were much lower though about a quarter of contacts with deputies at Quartz Hill High were reported as involving Black students, they account for only 9.4% of the student body. The number of citations at Quartz Hill high were also much lower, though, 31% of citations there were given to Black students compared to 21% of white students.
+### “78% of citations at Antelope Valley High were given to Black students. The single police contact with a white student did not result in a citation the number of contacts at Quartz Hill High, located on the city’s more affluent west side, were much lower though about a quarter of contacts with deputies at Quartz Hill High were reported as involving Black students, they account for only 9.4% of the student body. The number of citations at Quartz Hill high were also much lower, though, 31% of citations there were given to Black students compared to 21% of white students.”
 
 ``` r
 AntValleyClean %>%
@@ -400,11 +400,11 @@ AntValleyClean %>%
   filter(str_detect(toupper(`Reason for Contact`), "REASONABLE SUSPICION THAT THE PERSON WAS ENGAGED IN CRIMINAL ACTIVITY")) %>%
   filter(`Result of Contact:  In-field Cite and Release?`) %>%
   count(Race, sort = T) %>%
-  mutate(RactPct = n / 39)
+  mutate(RacePct = n / 39)
 ```
 
     ## # A tibble: 4 × 3
-    ##   Race                                        n RactPct
+    ##   Race                                        n RacePct
     ##   <chr>                                   <int>   <dbl>
     ## 1 Hispanic/Latino/Latina                     18  0.462 
     ## 2 Black/African American                     12  0.308 
