@@ -1,7 +1,7 @@
-Ant Valley Markdown
+
 ================
 Greg Morton
-10/27/2021
+
 
 ## Data Bulletproofing: ProPublica/KPCC/LAist
 
